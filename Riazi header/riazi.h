@@ -6,7 +6,7 @@ class Hendese
 {
 public:
     //2D
-        double circle_space(int x) {
+        double circle_area(int x) {
             double y=x*x*3.14;
             return y;
         }
@@ -14,11 +14,11 @@ public:
             double y=x*2*3.14;
             return y;
         }
-        double square_space_side(int x){
+        double square_area_side(int x){
             double y=x*x;
             return y;
         }
-        double square_space_diameter(int x){
+        double square_area_diameter(int x){
             double y=x*x/2.000;
             return y;
         }
@@ -26,37 +26,37 @@ public:
             double y=x*x;
             return y;
         }
-        double triangle_space_height(int x, int y){
+        double triangle_area_height(int x, int y){
             double z=x*y/2;
             return z;
         }
-        double triangle_space_sin(int x, int y, int z){
+        double triangle_area_sin(int x, int y, int z){
             double a=abs(0.5*x*y*sin(z));
             return a;
         }
 
         //3D
-        double sphere_space(int x) {
+        double sphere_area(int x) {
             double y;
             y=4*x*x*3.14;
             return y;
         }
-        double sphere_hajm(int x) {
+        double sphere_volume(int x) {
             double y;
             y=4/3*3.14*x*x*x;
             return y;
 }
-        double cube_space(int x){
+        double cube_area(int x){
             int y;
             y=x*x*6;
             return y;
         }
-        double cube_space_janebi(int x){
+        double cube_area_janebi(int x){
             int y;
             y=x*4*x;
             return y;
         }
-        double cube_hajm(int x){
+        double cube_volume(int x){
             int y;
             y=x*x*x;
             return y;
