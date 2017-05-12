@@ -1,7 +1,7 @@
 #ifndef HENDESE_H
 #define HENDESE_H
 #include <math.h>
-
+#define PI 3.14159265
 class Hendese
 {
 public:
@@ -31,7 +31,7 @@ public:
             return z;
         }
         double triangle_area_sin(int x, int y, int z){
-            double a=abs(0.5*x*y*sin(z));
+            double a=abs(0.5*x*y*sin(z*PI/180));
             return a;
         }
 
