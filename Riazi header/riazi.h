@@ -71,4 +71,39 @@ public:
         return z;
     }
 };
+class Zavie
+{
+public:
+	double deg_rad(float x)               //converts degree to radian
+	{
+		double y = x*PI / 180;
+		return y;
+	}
+	double deg_grad(float x)              //converts degree to grad
+	{
+		double y = x * 200 / 180;
+		return y;
+	}
+	double grad_rad(float x)              //converts grad to radian
+	{
+		double y = x*PI / 180;
+		return y;
+	}
+	double grad_deg(float x)              //converts grad to degree
+	{
+		double y = x * 180 / 200;
+		return y;
+	}
+	double rad_grad(float x)              //converts radian to grad
+	{
+		double y = x * 200 / PI;
+		return y;
+	}
+	double rad_deg(float x)               //converts radian to degree
+	{
+		double y = x * 180 / PI;
+		return y;
+	}
+};
+
 #endif // HENDESE_H
