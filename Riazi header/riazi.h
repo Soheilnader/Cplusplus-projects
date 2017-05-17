@@ -2,6 +2,15 @@
 #define HENDESE_H
 #include <math.h>
 #define PI 3.14159265
+
+long int factorial(int x)       //factorial function
+{
+    int y=1;
+    for(int i=1;i<=x;i++)
+        y=y*i;
+    return y;
+}
+
 class Hendese
 {
 public:
@@ -105,5 +114,17 @@ public:
 		return y;
 	}
 };
+class Tarkibiat
+{
+public:
 
+int tabdil(int n, int r){
+    int x=factorial(n)/factorial((n-r));
+    return x;
+}
+int tarkib(int n, int r){
+    int x=factorial(n)/(factorial(n-r)*factorial(r));
+    return x;
+}
+};
 #endif // HENDESE_H
