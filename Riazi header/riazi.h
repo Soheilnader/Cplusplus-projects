@@ -8,57 +8,57 @@
 
     // ////////////////////////////////////////Hendese/////////////////////////////// //
     //2D
-    double circle_area(int x) {                         //calculates circle area by radius
-            double y=x*x*3.14;
+    float circle_area(int x) {                         //calculates circle area by radius
+            float y=x*x*3.14;
             return y;
         }
-    double circle_periphery(int x) {                    //calculates circle periphery by radius
-            double y=x*2*3.14;
+    float circle_periphery(int x) {                    //calculates circle periphery by radius
+            float y=x*2*3.14;
             return y;
         }
-    double square_area_side(int x){                     //calculates square area by side
-            double y=x*x;
+    float square_area_side(int x){                     //calculates square area by side
+            float y=x*x;
             return y;
         }
-    double square_area_diameter(int x){                 //calculates square area by diameter
-            double y=x*x/2.000;
+    float square_area_diameter(int x){                 //calculates square area by diameter
+            float y=x*x/2.000;
             return y;
         }
-    double square_periphery(int x){                     //calculates square periphery by side
-            double y=x*x;
+    float square_periphery(int x){                     //calculates square periphery by side
+            float y=x*x;
             return y;
         }
-    double triangle_area_height(int x, int y){          //calculates triangle area by height and base
-            double z=x*y/2;
+    float triangle_area_height(float x, int y){          //calculates triangle area by height and base
+            float z=x*y/2;
             return z;
         }
-    double triangle_area_sin(int x, int y, int z){      //calculates triangle area by two sides and an angle between them
-            double a=0.5*x*y*sin(z*PI/180);
+    float triangle_area_sin(float x, float y, int z){      //calculates triangle area by two sides and an angle between them
+            float a=0.5*x*y*sin(z*PI/180);
             return a;
         }
 
     //3D
-    double sphere_area(int x) {                         //calculates sphere area by radius
-            double y;
+    float sphere_area(int x) {                         //calculates sphere area by radius
+            float y;
             y=4*x*x*3.14;
             return y;
         }
-    double sphere_volume(int x) {                       //calculates sphere volume by radius
-            double y;
+    float sphere_volume(int x) {                       //calculates sphere volume by radius
+            float y;
             y=4/3*3.14*x*x*x;
             return y;
 }
-    double cube_area(int x){
+    float cube_area(int x){
             int y;
             y=x*x*6;
             return y;
         }
-    double cube_area_janebi(int x){
+    float cube_area_janebi(int x){
             int y;
             y=x*4*x;
             return y;
         }
-    double cube_volume(int x){
+    float cube_volume(int x){
             int y;
             y=x*x*x;
             return y;
@@ -67,41 +67,41 @@
 
     // ////////////////////////////////////////Bordar/////////////////////////////// //
 
-    double two_point_distance(int x2,int x1,int y2,int y1){
-        double z=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    float two_point_distance(int x2,int x1,int y2,int y1){
+        float z=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
         return z;
     }
 
     // ////////////////////////////////////////Zavie/////////////////////////////// //
 
-    double deg_rad(float x)               //converts degree to radian
+    float deg_rad(float x)               //converts degree to radian
     {
-        double y = x*PI / 180;
+        float y = x*PI / 180;
         return y;
     }
-    double deg_grad(float x)              //converts degree to grad
+    float deg_grad(float x)              //converts degree to grad
     {
-        double y = x * 200 / 180;
+        float y = x * 200 / 180;
         return y;
     }
-    double grad_rad(float x)              //converts grad to radian
+    float grad_rad(float x)              //converts grad to radian
     {
-        double y = x*PI / 180;
+        float y = x*PI / 180;
         return y;
     }
-    double grad_deg(float x)              //converts grad to degree
+    float grad_deg(float x)              //converts grad to degree
     {
-        double y = x * 180 / 200;
+        float y = x * 180 / 200;
         return y;
     }
-    double rad_grad(float x)              //converts radian to grad
+    float rad_grad(float x)              //converts radian to grad
     {
-        double y = x * 200 / PI;
+        float y = x * 200 / PI;
         return y;
     }
-    double rad_deg(float x)               //converts radian to degree
+    float rad_deg(float x)               //converts radian to degree
     {
-        double y = x * 180 / PI;
+        float y = x * 180 / PI;
         return y;
     }
 
