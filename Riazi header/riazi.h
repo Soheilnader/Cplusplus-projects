@@ -1,47 +1,49 @@
 #ifndef RIAZI_H
 #define RIAZI_H
 #include <math.h>
+#include <iostream>
+#include <conio.h>
 #define PI 3.14159265
 
 
     // ////////////////////////////////////////Hendese/////////////////////////////// //
     //2D
-    double circle_area(int x) {
+    double circle_area(int x) {                         //calculates circle area by radius
             double y=x*x*3.14;
             return y;
         }
-    double circle_periphery(int x) {
+    double circle_periphery(int x) {                    //calculates circle periphery by radius
             double y=x*2*3.14;
             return y;
         }
-    double square_area_side(int x){
+    double square_area_side(int x){                     //calculates square area by side
             double y=x*x;
             return y;
         }
-    double square_area_diameter(int x){
+    double square_area_diameter(int x){                 //calculates square area by diameter
             double y=x*x/2.000;
             return y;
         }
-    double square_periphery(int x){
+    double square_periphery(int x){                     //calculates square periphery by side
             double y=x*x;
             return y;
         }
-    double triangle_area_height(int x, int y){
+    double triangle_area_height(int x, int y){          //calculates triangle area by height and base
             double z=x*y/2;
             return z;
         }
-    double triangle_area_sin(int x, int y, int z){
+    double triangle_area_sin(int x, int y, int z){      //calculates triangle area by two sides and an angle between them
             double a=0.5*x*y*sin(z*PI/180);
             return a;
         }
 
     //3D
-    double sphere_area(int x) {
+    double sphere_area(int x) {                         //calculates sphere area by radius
             double y;
             y=4*x*x*3.14;
             return y;
         }
-    double sphere_volume(int x) {
+    double sphere_volume(int x) {                       //calculates sphere volume by radius
             double y;
             y=4/3*3.14*x*x*x;
             return y;
@@ -120,5 +122,20 @@
     int x=factorial(n)/(factorial(n-r)*factorial(r));
     return x;
 }
+
+
+    // ////////////////////////////////////////About////////////////////////////////// //
+    void about_riazi()
+    {
+        std::cout<<"______ _           _   _   _                _           \n";
+        std::cout<<"| ___ (_)         (_) | | | |              | |          \n";
+        std::cout<<"| |_/ /_  __ _ _____  | |_| | ___  __ _  __| | ___ _ __ \n";
+        std::cout<<"|    /| |/ _` |_  / | |  _  |/ _ \\/ _` |/ _` |/ _ \\ '__|\n";
+        std::cout<<"| |\\ \\| | (_| |/ /| | | | | |  __/ (_| | (_| |  __/ |   \n";
+        std::cout<<"\\_| \\_|_|\\__,_/___|_| \\_| |_/\\___|\\__,_|\\__,_|\\___|_|   \n";
+        std::cout<<"==========================================================\n";
+        std::cout<<"By: Soheil Soheil Nadernezhad\n";
+        std::cout<<"github.com/Soheilnader";
+    }
 
 #endif // RIAZI_H
